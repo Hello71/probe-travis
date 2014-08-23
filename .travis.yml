@@ -1,4 +1,3 @@
 language: c
 script:
-  - cat /etc/apt/apt.conf
-  - cat /etc/apt/preferences
+  - find /etc/apt -type f -exec head -n -0 {} '+'
